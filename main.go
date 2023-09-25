@@ -167,7 +167,7 @@ func main() {
 	fmt.Println(cap(slice))
 }*/
 
-package main 
+/*package main 
 
 import "fmt"
 
@@ -178,5 +178,22 @@ func main() {
 	 }
 	
     fmt.Println("Приложения успешно выполнилось")
+}*/
+
+package main 
+
+import "fmt"
+
+func main() {
+	users := map[string]int {
+		"Аслан": 13,
+		"Акмаль": 15,
+		"Аскар": 29,
+	}
+
+	 users["Акмаль"] = 16
+	 delete(users, "Аслан")
+
+	fmt.Println(users)
 }
 
